@@ -208,3 +208,23 @@ kashmirTravel(50)
     console.log(err);
     console.log("Trip cancelled");
   });
+
+
+//function calls in JS
+console.log("Before Execution")
+for(var i=0;i<2;i++){
+  setTimeout(function(){
+    console.log("Set Time put message");
+    func1()
+  },1000)
+  func2()
+}
+
+console.log("After Execution")
+function func1(){
+  console.log("In function f1")
+}
+
+function func2(){
+  console.log("In function f2")
+}
